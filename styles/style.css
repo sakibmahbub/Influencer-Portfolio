@@ -1,0 +1,236 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster&family=Open+Sans:wght@400;600;700;800&family=Oswald&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&family=Work+Sans:wght@500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Menu Area Styles */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+.logo {
+  color: #3a3a3a;
+  font-size: 24px;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+.nav-ul li {
+  font-weight: 600;
+  font-size: 16px;
+  list-style: none;
+  color: #3a3a3a;
+}
+.nav-ul li a {
+  text-decoration: none;
+}
+
+/* Banner Area Styles */
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 50px 80px 0 100px;
+}
+.banner-info {
+  text-align: left;
+}
+.banner-img {
+  background: url("../images/Circle\ design.svg");
+}
+.banner-heading {
+  font-weight: 700;
+  font-size: 52px;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+.primary-description {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+  margin-bottom: 20px;
+}
+.primary-btn {
+  border: 0;
+  color: #ffffff;
+  width: 155px;
+  height: 44px;
+  font-weight: 700;
+  background: #e02c6d;
+}
+
+/* Brands Logo Area Styles */
+.brands {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 165px;
+}
+
+/* Popular Collection Styles */
+.popular-collection {
+  padding: 0 170px;
+}
+.section-heading {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.popular-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.product {
+  padding: 17px 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.product-img {
+  width: 300px;
+  height: 256px;
+}
+/* .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+} */
+.product-info .product-title {
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191f;
+}
+.product-info .price {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.product-info .ship {
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+}
+.see-more {
+  margin-top: 30px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(224, 44, 109, 0.87);
+}
+
+/* Feature Area Styles */
+.feature-products {
+  padding: 130px 165px;
+}
+.feature {
+  display: flex;
+  gap: 100px;
+}
+.feature-img {
+  width: 404px;
+  height: 270px;
+}
+.feature-heading {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+/* Footer Area Styles */
+footer {
+  background: #0a0826;
+  padding: 50px 0;
+}
+
+.footer-info .footer-heading {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer-description {
+  color: #d9dbe1;
+  text-align: center;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+
+@media screen and (max-width: 576px) {
+  /* Navigation  */
+  .navigation {
+    flex-direction: column;
+  }
+  .nav-ul {
+    margin-top: 15px;
+  }
+  /* Banner */
+  .banner {
+    flex-direction: column-reverse;
+    padding: 50px;
+  }
+  .banner-img {
+    background: none;
+  }
+  .banner-img img {
+    width: 257px;
+    height: 257px;
+  }
+  .banner-info {
+    text-align: center;
+  }
+  .banner-heading {
+    font-size: 28px;
+  }
+  .primary-description {
+    font-size: 14px;
+  }
+  /* Brands Logo */
+  .brands {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 80px 50px;
+  }
+  /* Popular Products */
+  .popular-collection {
+    padding: 5px;
+  }
+  section-heading {
+    font-size: 16px;
+  }
+  .popular-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* Feater */
+  .feature {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .feature-img {
+    width: 299px;
+    height: 188px;
+  }
+  .feature-heading {
+    font-size: 24px;
+  }
+  /* Footer */
+  .footer-info .footer-heading {
+    font-size: 16px  ;
+  }
+  .footer-description {
+    font-size: 12px;
+  }
+}
